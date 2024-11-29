@@ -1,11 +1,37 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+//write your code here
+let pronoun = ["the", "your", "our", "their"];
+let adj = [
+  "great",
+  "big",
+  "crazy",
+  "dangerous",
+  "gorgeous",
+  "diabolical",
+  "monstruous",
+  "drunk",
+  "savage"
+];
+let noun = [
+  "cat",
+  "dog",
+  "hyena",
+  "wolf",
+  "zombie",
+  "priest",
+  "bird",
+  "rat",
+  "demon",
+  "monster",
+  "monk"
+];
+let ext = [".es", ".com", ".io", ".net"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (let i = 0; i < pronoun.length; i++) {
+  for (let j = 0; j < adj.length; j++) {
+    for (let k = 0; k < noun.length; k++) {
+      for (let l = 0; l < ext.length; l++) {
+        console.log(pronoun[i] + adj[j] + noun[k] + ext[l]);
+      }
+    }
+  }
+}
